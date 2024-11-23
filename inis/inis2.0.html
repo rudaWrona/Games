@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inis</title>
+  <style>
+    .link {
+      text-decoration: none;
+      color: rgba(165, 202, 95, 0.76);
+    }
+
+    .link:hover,
+    .link:active {
+      color: white;
+      background-color: rgba(165, 202, 95, 0.76);
+    }
+
+    h1 {
+      font-size: 30px;
+      color: rgba(165, 202, 95, 0.76);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1><a class="link" href="../../index.html">VanillaDice.pl</a></h1>
+
+  <form action="inis2.0.php" method="POST">
+    <fieldset>
+      <legend>Podaj nazwy graczy w rozgrywce Inis:</legend>
+      <table>
+        <tr>
+          <td><input name="gracz[]"></td>
+        </tr>
+        <tr>
+          <td><input name="gracz[]"></td>
+        </tr>
+        <tr>
+          <td><input name="gracz[]"></td>
+        </tr>
+        <tr>
+          <td><input name="gracz[]"></td>
+        </tr>
+        <tr>
+          <td><input name="gracz[]"></td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset>
+      <legend>Czas na rundę:</legend>
+      <input name="czas" id="czas"><label for="czas">min.</label>
+
+    </fieldset>
+
+
+    <input type="submit" value="Wyślij">
+
+
+
+  </form>
+
+
+
+</body>
+
+</html>
